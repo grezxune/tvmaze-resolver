@@ -2,7 +2,7 @@
 
 ## Project Focus
 
-This repository is a resolver-focused TVmaze GraphQL candidate exercise. Keep candidate-facing work centered on `src/modules/show/show.mapper.ts` and `src/modules/show/show.resolver.ts`.
+This repository is a resolver-focused TVmaze GraphQL candidate exercise. Keep candidate-facing work centered on `src/context.ts`, `src/modules/show/show.mapper.ts`, and `src/modules/show/show.resolver.ts`.
 
 ## Engineering Rules
 

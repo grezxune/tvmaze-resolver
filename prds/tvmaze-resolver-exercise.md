@@ -16,13 +16,13 @@ This short exercise assesses TypeScript backend judgment around GraphQL resolver
 
 ## Goals & KPIs
 
-- Candidate work is concentrated in `src/modules/show/show.mapper.ts` and `src/modules/show/show.resolver.ts`.
+- Candidate work is concentrated in `src/context.ts`, `src/modules/show/show.mapper.ts`, and `src/modules/show/show.resolver.ts`.
 - Datasource code is implemented and not part of the candidate task.
 - Resolver and mapper tests fail before implementation and pass after the expected implementation.
 
 ## Personas/Journeys
 
-Candidate: reads the README, installs dependencies with bun, runs tests, implements mapper/resolver behavior, reruns tests and typecheck.
+Candidate: reads the README, installs dependencies with bun, runs tests, wires the TVmaze base URL into context, implements mapper/resolver behavior, reruns tests and typecheck.
 
 Reviewer: inspects resolver clarity, mapper edge-case handling, and deterministic summary behavior.
 
@@ -30,7 +30,7 @@ Reviewer: inspects resolver clarity, mapper edge-case handling, and deterministi
 
 - Provide a working Apollo Server scaffold.
 - Provide an implemented TVmaze datasource.
-- Leave mapper and resolver behavior as the primary TODOs.
+- Leave context base URL wiring plus mapper and resolver behavior as the primary TODOs.
 - Test invalid input, not found, upstream failure, successful mapping, and computed summary behavior.
 
 ## Non-functional Requirements
@@ -59,12 +59,12 @@ The GraphQL `show` query should perform at most one datasource call after valida
 
 Risk: candidates spend time on datasource details.
 
-Mitigation: datasource is complete and README points candidates to mapper/resolver files only.
+Mitigation: datasource is complete and README points candidates to context, mapper, and resolver files only.
 
 ## Success Metrics
 
 - `bun run typecheck` succeeds.
-- Tests fail on mapper/resolver TODOs before implementation.
+- Tests fail on context, mapper, and resolver TODOs before implementation.
 - Tests pass after a correct mapper/resolver implementation.
 
 ## Rollout Plan

@@ -34,10 +34,11 @@ https://api.tvmaze.com
 
 Make the supplied tests pass by completing:
 
+- `src/context.ts`
 - `src/modules/show/show.mapper.ts`
 - `src/modules/show/show.resolver.ts`
 
-The datasource in `src/datasources/tvmaze-api.ts` is already implemented for this version.
+The datasource in `src/datasources/tvmaze-api.ts` is already implemented for this version, but the base URL still needs to be wired into the application context.
 
 ## Functional Requirements
 
