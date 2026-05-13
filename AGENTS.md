@@ -6,7 +6,7 @@ This repository is a resolver-focused TVmaze GraphQL candidate exercise. Keep ca
 
 ## Engineering Rules
 
-- Use `bun` for dependency installation and scripts.
+- Use `pnpm` for dependency installation and scripts.
 - Preserve strict TypeScript settings.
 - Keep the datasource implemented for this exercise version.
 - Keep docs candidate-facing and avoid leaking solution code into `README.md`.
@@ -15,6 +15,6 @@ This repository is a resolver-focused TVmaze GraphQL candidate exercise. Keep ca
 ## Verification
 
 ```bash
-bun run typecheck
-bun run test
+pnpm run typecheck
+pnpm test
 ```
